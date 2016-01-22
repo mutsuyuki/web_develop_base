@@ -1,0 +1,16 @@
+extends jade/_base
+include jade/_mixin
+
+block title
+    title Next page
+
+block css
+    link(rel="stylesheet",href="css/app.css") 
+
+block content
+    section
+        +main_title("This is next page")
+        p  develop with jade + sass(compass) + typescript
+
+block script
+    script(type="text/javascript",src="js/next.js")
